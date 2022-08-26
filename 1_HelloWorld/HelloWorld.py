@@ -3,7 +3,7 @@
 # @Author:      Alan
 # @File:        1_HelloWorld.py
 # @Software:    PyCharm
-# @Description: First run
+# @Description: 基础知识
 
 import keyword
 
@@ -33,7 +33,7 @@ print("===print===")
 """
 print("===注释===")
 
-# todo 2. 标识符
+# todo 2. 标识符和变量赋值
 """
 - 命名规则
     - 对各种 变量、方法、函数等命名时使用的字符序列称为标识符。
@@ -50,17 +50,15 @@ print("===注释===")
 - 特殊含义
     - _标识符                             表示不能直接访问，内部属性
     - __标识符                            私有成员
-    - __init__                          专用标识符    
+    - __init__                           专用标识符    
+    
+- 变量赋值
+    - Python中变量声明不需要声明类型。每个变量使用前都必须赋值，赋值才会被创建。
+    - 使用 "=" 给变量赋值,左边是变量名,右边是值    
 """
 # 定义字符串
 aString = "张三"
 print(aString)
-# 定义整数类型
-bInt = 10
-print(bInt)
-# 定义浮点类型
-cFloat = 10.232
-print(cFloat)
 print("===标识符===")
 
 # todo 3. Python关键字
