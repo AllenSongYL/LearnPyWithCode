@@ -21,7 +21,7 @@ print("Hello World2!", end="")
 print("H", "e", "l", "l", "w", "o", "r", "l", "d", "3", sep="|")
 with open("output.txt", "a+") as f:
     print("Print output to file!", file=f)
-print("===print===")
+print("===print===", end="\n\n")
 
 # todo 1. 注释
 # 这是单行注释 print不会执行，解析器忽略该行代码
@@ -31,7 +31,7 @@ print("===print===")
 """
     print("Hello World!")
 """
-print("===注释===")
+print("===注释===", end="\n\n")
 
 # todo 2. 标识符和变量赋值
 """
@@ -59,7 +59,7 @@ print("===注释===")
 # 定义字符串
 aString = "张三"
 print(aString)
-print("===标识符===")
+print("===标识符===", end="\n\n")
 
 # todo 3. Python关键字
 """
@@ -68,7 +68,7 @@ print("===标识符===")
 buildinKW = keyword.kwlist
 print("当前版本所有关键字: ", buildinKW)
 print("关键字数量: ", len(buildinKW))
-print("===关键字===")
+print("===关键字===", end="\n\n")
 
 # todo 4. 缩进和换行
 """
@@ -80,5 +80,11 @@ Python特色：
 if True:
     print("这一行太长了\
     换行输入")
-print("===缩进和换行===")
+print("===缩进和换行===", end="\n\n")
 
+
+# todo 5 格式化输出
+# Python3.6以后格式化字符串
+print(f"1 + 2 = { 1 + 2 }")
+fString = "f-string"
+print(f"看这里{fString}", end="\n\n")
