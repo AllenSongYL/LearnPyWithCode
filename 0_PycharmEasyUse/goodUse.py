@@ -35,7 +35,7 @@
 
 # todo 3.便捷操作
 # 3.1  "Hello".pri  快速输出print("Hello")
-#       a + b.pro   快速输出print(a + b)
+#       a + b.pri   快速输出print(a + b)
 print("Hello")
 a = 10
 b = 30
