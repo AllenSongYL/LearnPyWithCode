@@ -23,7 +23,7 @@ with open("output.txt", "a+") as f:
     print("Print output to file!", file=f)
 print("===print===", end="\n\n")
 
-# todo 1. 注释
+# todo 1.0 注释
 # 这是单行注释 print不会执行，解析器忽略该行代码
 # print("Hello World!")
 
@@ -33,7 +33,7 @@ print("===print===", end="\n\n")
 """
 print("===注释===", end="\n\n")
 
-# todo 2. 标识符和变量赋值
+# todo 1.2 标识符和变量赋值
 """
 - 命名规则
     - 对各种 变量、方法、函数等命名时使用的字符序列称为标识符。
@@ -61,7 +61,7 @@ aString = "张三"
 print(aString)
 print("===标识符===", end="\n\n")
 
-# todo 3. Python关键字
+# todo 1.3 Python关键字
 """
 保留字及关键字，不能作为标志符。标准库提供了keyword模块，可以输出当前版本所有关键
 """
@@ -70,7 +70,7 @@ print("当前版本所有关键字: ", buildinKW)
 print("关键字数量: ", len(buildinKW))
 print("===关键字===", end="\n\n")
 
-# todo 4. 缩进和换行
+# todo 1.4 缩进和换行
 """
 Python特色：
 使用缩进来表示代码块，不需要使用{}
@@ -83,7 +83,7 @@ if True:
 print("===缩进和换行===", end="\n\n")
 
 
-# todo 5 格式化输出
+# todo 1.5 格式化输出
 # Python3.6以后格式化字符串
 print(f"1 + 2 = { 1 + 2 }")
 fString = "f-string"
