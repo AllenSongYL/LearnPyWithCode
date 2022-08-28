@@ -23,7 +23,9 @@ not in     成员运算符 - 如果字符串中不包含给定的字符返回 Tr
 
 # 定义字符串
 aString = "张三"
+aString2 = '李四'
 print(aString)
+print(aString2)
 # 使用type()查看数据类型
 print(type(aString))
 

@@ -24,3 +24,10 @@ print(bool({}))
 print(bool(None))
 print(bool(()))
 print("===bool()===", end="\n\n")
+
+# 常用于if else语句
+if 2 > 1:
+    print("yes")
+else:
+    print("no")
+
