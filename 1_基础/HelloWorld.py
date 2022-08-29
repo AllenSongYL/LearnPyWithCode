@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # @time:        2022/8/26 9:56
 # @Author:      Alan
-# @File:        1_HelloWorld.py
+# @File:        HelloWorld.py
 # @Software:    PyCharm
 # @Description: 基础知识
 
@@ -14,7 +14,6 @@ import keyword
 - end: 在最后一个值之后附加的字符串，默认为换行符。可以使用end=""，取消换行
 - file: 类文件对象。默认是sys.stdout
 """
-
 
 print("Hello World !")
 print("Hello World2!", end="")
@@ -31,6 +30,16 @@ print("===print===", end="\n\n")
 """
     print("Hello World!")
 """
+
+# 函数注释
+def a(para):
+    """
+
+    :param para:随便输入一个参数
+    :return:
+    """
+    pass
+
 print("===注释===", end="\n\n")
 
 # todo 1.2 标识符和变量赋值
@@ -82,9 +91,8 @@ if True:
     换行输入")
 print("===缩进和换行===", end="\n\n")
 
-
 # todo 1.5 格式化输出
 # Python3.6以后格式化字符串
-print(f"1 + 2 = { 1 + 2 }")
+print(f"1 + 2 = {1 + 2}")
 fString = "f-string"
 print(f"看这里{fString}", end="\n\n")
