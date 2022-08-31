@@ -35,11 +35,11 @@ print("===print===", end="\n\n")
 def a(para):
     """
 
-    :param para:随便输入一个参数
-    :return:
+    :param    para:随便输入一个参数
+    :return:  pass
     """
     pass
-
+print(a.__doc__)
 print("===注释===", end="\n\n")
 
 # todo 1.2 标识符和变量赋值

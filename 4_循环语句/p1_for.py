@@ -7,28 +7,37 @@
 
 # todo 1.0 for循环
 """
+执行已知次数的重复任务，可以使用for循环
 for 循环可以遍历任何可迭代对象，如一个列表或者一个字符串。
 
 格式
-for 变量 in 序列:
+for 变量 in 可迭代对象:
     代码块
 else:
     代码块
 
 else 循环结束后执行，不推荐使用else
 
+注意
+for循环中的代码块，需要缩进
 """
+
 for i in [1, 2, 3, 4, 5]:
     print(f"循环中, i的值{i}")
 else:
     print("else代码块")
 print("===for列表===", end="\n\n")
 
-# todo 1.1 range([0],stop)
+# 报错 TypeError: 'int' object is not iterable
+# for i in 2333:
+#     print(i)
+
+# todo 1.1 range([0],stop,[step])
 # 生产指定数列，不包含结尾的stop
+# step 指定步长值
 for i in range(10):
     print(f"使用range P1, i的值{i}")
-for i in range(2, 6):
+for i in range(0, 7, 2):
     print(f"使用range P2, i的值{i}")
 print("===for range===", end="\n\n")
 
@@ -57,4 +66,6 @@ for i in range(10):
         continue
     else:
         print(f"使用range P5, i的值{i}")
+# for中的i为局部变量，外部无法访问
+# print(i)
 print("===continue===", end="\n\n")

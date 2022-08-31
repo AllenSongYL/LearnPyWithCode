@@ -91,9 +91,9 @@ print(f"fTunple个数: {len(fTunple)}")
 
 #
 
-# todo 1.7 元组推导式
+# todo 1.7 元组推导式(生成器表达式)
 # 对序列或可迭代对象中的每个元素应用某种操作，用生成的结果创建新的列表；或用满足特定条件的元素创建子序列
-# 格式： [表达式 for 变量 in 列表 [if 条件]]
+# 格式： (表达式 for 变量 in 列表 [if 条件])
 # 返回： 生成器对象
 xTunple = (i for i in range(10) if i % 2 == 0)
 print(f"[i for i in range(10) if i % 2 == 0] = {xTunple}")
