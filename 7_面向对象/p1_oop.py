@@ -58,6 +58,10 @@ class Person:
         # 可以调用一个方法来实例化
         # self.set_person(name, age)
 
+    @classmethod
+    def clss(cls):
+        print(cls.classname)
+
     def getattr(self):
         return self
 

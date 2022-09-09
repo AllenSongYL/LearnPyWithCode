@@ -14,7 +14,7 @@ sorted函数也是一个高阶函数，可以接受一个key函数来定制排�
 key 指定排序的对象，可以传入函数或方法名，这样可以把函数作为排序的标准。
 reverse 可选参数，默认为False，表示升序排列，如果为True，则表示降序排列。
 
-list.sorted(key=None, reverse=False)
+list.sort(key=None, reverse=False)
 会改变原列表，而不是返回一个新的列表。节约内存。
 """
 

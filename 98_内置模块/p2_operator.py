@@ -15,3 +15,4 @@ print(id(a), id(b))
 print(f"{a} 等于 {b} : {operator.eq(a, b)}")
 print(f"{a} 等于 {c} : {operator.eq(a, c)}")
 print(f"{a} 小于 {c} : {operator.lt(a, c)}")
+

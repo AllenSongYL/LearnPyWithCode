@@ -177,6 +177,7 @@ print(f"{hlist} == {jlist} : {hlist == jlist}")
 # todo 列表比较 使用operator的方法
 # 比较第一个元素，是则返回True，否则False,相等则比较第二个元素
 print(f"{hlist} 小于 {jlist} : {operator.lt(hlist, jlist)}")
+
 print("===列表比较===", end="\n\n")
 
 # todo 1.8 列表推导式

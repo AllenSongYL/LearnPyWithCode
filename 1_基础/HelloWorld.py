@@ -9,12 +9,17 @@ import keyword
 
 # todo 0. print输出到控制台
 """
+def print(*values: object,
+          sep: str | None = ...,
+          end: str | None = ...,
+          file: SupportsWrite[str] | None = ...,
+          flush: bool = ...) -> None
 - 将值打印到流中，默认情况下打印到 sys.stdout。且默认换行。
 - sep: print多个时，指定分隔符
 - end: 在最后一个值之后附加的字符串，默认为换行符。可以使用end=""，取消换行
 - file: 类文件对象。默认是sys.stdout
 """
-
+print()
 print("Hello World !")
 print("Hello World2!", end="")
 print("H", "e", "l", "l", "w", "o", "r", "l", "d", "3", sep="|")

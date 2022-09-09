@@ -66,29 +66,38 @@ Python 中，提供了两种 生成器（Generator） ，一种是生成器函�
 生成器表达式，与列表推导式类似，区别在于，它使用小括号 () 包裹
 """
 
+
 # todo 1.2.1 生成器函数
-def gen_func():
-    yield 1
-    yield 2
-    yield 3
-    yield 4
-    yield 5
+def fibonacci(n):  # 生成器函数 - 斐波那契
+    a, b, counter = 0, 1, 0
+    while True:
+        if counter > n:
+            raise StopIteration
+        yield a
+        a, b = b, a + b
+        counter += 1
 
 
-it = gen_func()
-print(it, type(it))
-print(next(it))
-print(next(it))
-print(next(it))
-print(next(it))
-print(next(it))
+f = fibonacci(10)  # f 是一个迭代器，由生成器返回生成
+print(f, type(f))
+print(next(f))
+print(next(f))
+print(next(f))
+print(next(f))
+print(next(f))
+print(next(f))
+print(next(f))
+print(next(f))
+print(next(f))
+print(next(f))
+print(next(f))
 print("===生成器函数===", end="\n\n")
 
 # todo 1.2.2 生成器表达式
 """
 生成器表达式，与列表推导式类似，区别在于，它使用小括号 () 包裹
 """
-gen_exp = (x*2 for x in range(10))
+gen_exp = (x * 2 for x in range(10))
 # gen_exp = iter(range(10))
 print(gen_exp, type(gen_exp))
 print(next(gen_exp))

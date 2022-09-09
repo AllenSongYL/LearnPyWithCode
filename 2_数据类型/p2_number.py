@@ -27,7 +27,6 @@ import math
 **         幂运算
 """
 
-
 aInt = 100
 print(f"这是一个整数(int)类型: {aInt}, 类型: {type(aInt)}, 地址: {id(aInt)}")
 aInt = aInt + 100
